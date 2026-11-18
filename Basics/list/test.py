@@ -1,11 +1,13 @@
-numbers = [2, 4, 2, 7, 4, 9, 7, 5]
+numbers = [1, 2, 3, 4, 5]
+
+#  store first the last value :-
+k = 2
+lastvalue = numbers[-1]
+
+for i in range(len(numbers) -2 , -1 , -1):
+    numbers[i+k] = numbers[i]
 
 
-dulpicatelist = []
+numbers[k]= lastvalue
 
-for x in numbers:
-    if x in numbers:
-        dulpicatelist.append(x)
-
-
-print(dulpicatelist)
+print(numbers)
